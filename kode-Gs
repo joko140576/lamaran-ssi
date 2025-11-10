@@ -1,0 +1,33 @@
+function doPost(e) {
+  const ss = SpreadsheetApp.openById('1JryGMgd6Vp4bFXjzc48siqgn0ufEA-6KDTQVzuT5Q6Q'); // Ganti ID sesuai ID Sheet kamu
+  const sheet = ss.getSheetByName('Sheet1');
+  const data = e.parameter;
+
+  sheet.appendRow([
+    new Date(),               // Timestamp otomatis
+    data.nama,
+    data.telepon,
+    data.ttl,
+    data.usia,
+    data.pendidikan,
+    data.jurusan,
+    data.pernah_kerja,
+    data.pengalaman,
+    data.jabatan,
+    data.alasan_keluar,
+    data.komputer,
+    data.office,
+    data.elektronika,
+    data.mekanik,
+    data.elektrik,
+    data.administrasi,
+    data.akuntansi,
+    data.keahlian_lain,
+    data.penempatan,
+    data.aturan,
+    data.shift,
+    data.libur
+  ]);
+
+  return ContentService.createTextOutput('Success').setMimeType(ContentService.MimeType.TEXT);
+}
