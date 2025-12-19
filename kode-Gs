@@ -14,7 +14,7 @@ function doPost(e) {
     data.pernah_kerja,
     data.pengalaman,
     data.jabatan,
-    data.alasan_keluar,
+    data.motivasi,
     data.komputer,
     data.office,
     data.elektronika,
