@@ -6,6 +6,7 @@ function doPost(e) {
   sheet.appendRow([
     new Date(),               // Timestamp otomatis
     data.nama,
+    data.domisili,
     data.telepon,
     data.ttl,
     data.usia,
