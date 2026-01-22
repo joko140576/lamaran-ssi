@@ -8,6 +8,7 @@
   <!-- Bootstrap & Font -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
   <style>
     body {
@@ -191,7 +192,7 @@
               <input type="text" name="nama" class="form-control" required>
             </div>
             <div class="col-md-6 mb-3">
-              <label class="form-label">Domisi saat ini</label>
+              <label class="form-label">Domisi / Kota anda saat ini</label>
               <input type="text" name="domisili" class="form-control" required>
             </div>
             <div class="col-md-6 mb-3">
@@ -305,8 +306,54 @@
             </textarea>
           </div>
 
+          <button type="submit" class="btn btn-danger w-100 mt-4 py-2 fw-bold"><i class="bi bi-1-circle-fill me-2"></i> Kirim Lamaran</button>
+          <!-- Section Upload Dokumen -->
+<hr>
+<section id="upload-dokumen" class="mt-5">
+ <h2 class="section-title">Upload Data Pelamar</h2>>
 
-          <button type="submit" class="btn btn-success w-100 mt-4 py-2 fw-bold">Kirim Lamaran</button>
+  <p class="text-center">
+    Setelah Anda mengirim biodata singkat, maka selanjutnya mohon kirimkan dokumen berikut:
+  </p>
+
+  <ul class="list-group mb-4">
+    <li class="list-group-item">1) Scan KTP</li>
+    <li class="list-group-item">2) Scan Ijazah</li>
+    <li class="list-group-item">3) CV / Curriculum Vitae</li>
+  </ul>
+
+  <!-- Alert Upload PDF -->
+<div class="container my-4">
+  <div class="alert alert-danger d-flex align-items-start shadow-sm rounded-3" role="alert">
+    
+    <div class="me-3 fs-3">
+      ⚠️
+    </div>
+
+    <div>
+      <h5 class="alert-heading fw-bold mb-2">
+        Perhatian!
+      </h5>
+      <p class="mb-0">
+        Upload <strong>3 file tersebut dalam satu file PDF</strong>.
+        Gunakan aplikasi PDF agar <strong>3 file dapat di-merge</strong> menjadi satu dokumen.
+        <br>
+        <strong>Nama file wajib menggunakan nama Anda!</strong>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+  <div class="text-center mt-3">
+
+    <a href="https://forms.gle/5677Rdf77ACHnZ9z7" class="btn btn-danger w-100 mt-4 py-2 fw-bold">
+      <i class="bi bi-2-circle-fill me-2"></i>Upload Dokumen
+    </button></a>
+  </div>
+</section>
+
         </form>
       </div>
     </div>
@@ -320,7 +367,7 @@
               </div>
               <div class="modal-body">
                 <p>✅ Data Anda sudah tersimpan di database kami.<br>
-                Tim HRD akan menghubungi Anda jika ada peluang yang sesuai.</p>
+                Tim HRD akan menghubungi Anda jika anda sesuai spesifikasi kami. Selanjutnya Upload file Dokument anda ! </p>
               </div>
               <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-success" data-bs-dismiss="modal">Tutup</button>
